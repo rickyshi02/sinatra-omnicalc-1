@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Omnicalc-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    <h1>
+      <%=@form.last[0]%> Results
+    </h1>
+
+    <dl>
+      <% @form.each do |array|%>
+        <dt> <%= array[0]%>
+        </dt>
+        <dd> <%= array[1]%>
+        </dd>
+      <% end%>
+    </dl>
+
+    <a href="/square/new">
+      Calculate another square
+    </a>
+
+  </body>
+</html>
